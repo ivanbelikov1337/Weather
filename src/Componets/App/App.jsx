@@ -11,17 +11,17 @@ import ShowAll from "../ShowAll/ShowAll";
 const App = () => {
     const dispatch = useDispatch()
     useEffect(() => {
-       dispatch(getWeather("london"))
+        dispatch(getWeather("london"))
         dispatch(getWeatherFiveDay("london"))
     }, [dispatch]);
 
     return (
-            <section className={styles.wrapper}>
-                <Routes>
-                    <Route path={ROUTES.HOME} element={ <Home/>}/>
-                    <Route path={ROUTES.VIEW_FIVE_DAYS} element={ <ShowAll/>}/>
-                </Routes>
-            </section>
+        <section className={styles.wrapper}>
+            <Routes>
+                <Route path={ROUTES.HOME} element={<Home/>}/>
+                <Route path={ROUTES.VIEW_FIVE_DAYS} element={<ShowAll/>}/>
+            </Routes>
+        </section>
 
     );
 }

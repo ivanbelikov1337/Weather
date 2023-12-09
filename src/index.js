@@ -1,7 +1,5 @@
-// @ts-ignore
 import React from 'react';
-
-import ReactDOM from "react-dom/client";
+import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './Componets/App/App';
 import {Provider} from "react-redux";

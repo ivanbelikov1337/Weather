@@ -1,0 +1,22 @@
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../../Image/Backgroundbg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: grid;
+    place-content: center;
+    grid-template-columns: 42rem 49rem;
+    gap: 3.2rem;
+}
+
+
+@media (max-width: 500px) {
+    .wrapper    {
+        display: grid;
+        grid-template-columns: none;
+        height: 100%;
+        width: 100vw;
+        padding: 3rem 0 3rem 0;
+    }
+}

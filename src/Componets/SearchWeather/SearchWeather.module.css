@@ -1,0 +1,166 @@
+.wrapper {
+    background-color: #6D67D0;
+    width: 41rem;
+    height: 44.2rem;
+    font-family: Lato, sans-serif;
+    display: grid;
+    grid-template-rows: 7rem 1fr 8rem;
+    position: relative;
+    background-image: url("../../Image/sss.png");
+    background-size: cover;
+    border-radius: 1rem;
+}
+
+.cite {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 3rem 3rem 0 0;
+    gap: 0.5rem;
+
+}
+.citePointer    {
+    width: 0.8rem;
+    height: 1rem;
+}
+
+.citeName {
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.5rem;
+    color: #C2BFF4;
+}
+
+.item {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    grid-template-rows: 5rem 4rem 12rem;
+    padding: 6rem 6rem 0 6rem;
+    width: 41rem;
+    box-sizing: border-box;
+
+}
+
+.mt {
+    width: 20rem;
+    text-align: center;
+}
+
+.otherTemp {
+    font-size: 2rem;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1rem 1rem 0 0;
+}
+
+.mainTemperature {
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    color: #FFFFFF;
+    font-weight: 700;
+    align-items: center;
+    font-size: 8rem;
+    position: relative;
+
+
+}
+
+.celsius {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    font-size: 2rem;
+    color: #DAD8F7;
+    justify-content: start;
+}
+
+.info {
+    display: flex;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.infoItems {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    gap: 2rem;
+    width: 11.6rem;
+    height: 5rem;
+    background: rgba(102, 96, 200, 0.6);
+    border-radius: 0.4rem;
+}
+.infoItemsImage {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.element {
+    color: #E7E6FB;
+    font-size: 1rem;
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+}
+
+.number {
+    color: #E7E6FB;
+    font-size: 1.5rem;
+    font-family: Lato, sans-serif;
+}
+.err    {
+    text-align: center;
+    padding-top: 0.2rem;
+    font-size: 1.5rem;
+    color: #d24444;
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+}
+.mainCloud {
+    position: absolute;
+    top: -2rem;
+    left: -3rem;
+}
+
+.input {
+    border: none;
+    outline: none;
+    width: 20rem;
+    height: 2rem;
+    border-radius: 1rem;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    font-size: 1.2rem;
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+    color: #222;
+    letter-spacing: 0.1rem;
+    background-color: #c6c3ef;
+
+}
+
+.input:hover {
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.loading    {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: #FFFFFF;
+}
+
+@media (max-width: 500px) {
+    .wrapper    {
+        width: 35rem;
+    }
+    .infoItems  {
+        width: 9.6rem;
+    }
+    .item   {
+        width: 37rem;
+    }
+}
