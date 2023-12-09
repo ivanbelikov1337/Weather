@@ -11,6 +11,7 @@ import {ROUTES} from "../../Utils/routes";
 
 
 const Dashboard = () => {
+
     const {
         weatherDataWind,
         weatherDataMain,
@@ -18,6 +19,9 @@ const Dashboard = () => {
         weatherFiveDay
     } = useSelector(({weather}) => weather)
     const list = weatherFiveDay.filter((_, i) => i < 5)
+
+    const dataSunset = new Date((weatherDataSys.sunset) * 1000)
+    const dataSunrise = new Date((weatherDataSys.sunrise) * 1000)
 
     return (
         <>
@@ -41,11 +45,11 @@ const Dashboard = () => {
                         </div>
                         <p className={styles.numbers}>
                             <BsFillSunriseFill color={"yellow"} size={"3rem"}/>
-                            {new Date((weatherDataSys.sunrise ) * 1000).toJSON().slice(11,19)}
+                            {dataSunset ? dataSunset.toTimeString().slice(0, 9) : null}
                         </p>
                         <p className={styles.numbers}>
                             <BsFillSunsetFill color={"yellow"} size={"3rem"}/>
-                            {new Date((weatherDataSys.sunset ) * 1000).toJSON().slice(11,19)}
+                            {dataSunrise ? dataSunrise.toTimeString().slice(0, 9) : null}
                         </p>
                     </div>
                 </div>
