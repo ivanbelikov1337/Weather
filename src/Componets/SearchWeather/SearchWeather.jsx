@@ -41,7 +41,6 @@ const SearchWeather = () => {
                 </div>
                 <div className={styles.item}>
                     <div className={styles.mainTemperature}>
-                        Ты лучшая бабушка в мире!
                         <p className={styles.mt}>{Math.round(weatherDataMain.temp || "")}</p>
                         <span className={styles.celsius}>°C</span>
                     </div>
